@@ -7,8 +7,8 @@ public class Theatre {
         Director director1 = new Director("Константин", "Станиславский", Gender.MALE, 15);
         Director director2 = new Director("Елена", "Альховская", Gender.FEMALE, 8);
 
-        String choreographer = "Михаил Нелипа";
-        String musicAuthor = "Пётр Чайковский";
+        Person musicAuthor = new Person("Пётр", "Чайковский", Gender.MALE);
+        Person choreographer = new Person("Михаил", "Нелипа", Gender.MALE);
 
         Show ordinaryShow = new Show("Вишнёвый сад", 180, director1);
         ordinaryShow.printDirector();

@@ -1,8 +1,8 @@
 public class Ballet extends MusicalShow {
-    private String choreographer;
+    private final Person choreographer;
 
     public Ballet(String title, int duration, Director director,
-                  String musicAuthor, String librettoText, String choreographer) {
+                  Person musicAuthor, String librettoText, Person choreographer) {
         super(musicAuthor, librettoText, title, duration, director);
         this.choreographer = choreographer;
     }
@@ -10,6 +10,6 @@ public class Ballet extends MusicalShow {
     @Override
     public void printLibretto() {
         super.printLibretto();
-        System.out.println("Хореограф: " + choreographer);
+        System.out.println("Хореограф: " + choreographer.getFullName());
     }
 }

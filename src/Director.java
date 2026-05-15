@@ -9,8 +9,4 @@ public class Director extends Person {
     public int getNumberOfShows() {
         return numberOfShows;
     }
-
-    public String getFullName() {
-        return name + " " + surname;
-    }
 }

@@ -16,8 +16,12 @@ public class Person {
     public String getSurname() {
         return surname;
     }
+    public String getFullName() {
+        return name + " " + surname;
+    }
 
-    public Gender getGender() {
-        return gender;
+    @Override
+    public String toString() {
+        return getFullName();
     }
 }

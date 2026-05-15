@@ -1,8 +1,8 @@
 public class MusicalShow extends Show {
-    private final String musicAuthor;
+    private final Person musicAuthor;
     private final String librettoText;
 
-    public MusicalShow(String musicAuthor, String librettoText, String title, int duration, Director director) {
+    public MusicalShow(Person musicAuthor, String librettoText, String title, int duration, Director director) {
         super(title, duration, director);
         this.musicAuthor = musicAuthor;
         this.librettoText = librettoText;
@@ -11,6 +11,6 @@ public class MusicalShow extends Show {
     public void printLibretto(){
         System.out.println("Либретто спектакля \"" + title + "\":");
         System.out.println(librettoText);
-        System.out.println("Автор музыки: " + musicAuthor);
+        System.out.println("Автор музыки: " + musicAuthor.getFullName());
     }
 }
